@@ -8,4 +8,6 @@ export const initSocket = async () => {
         transports: ['websocket'],
     };
     return io("localhost:2000", options);
+   // return io(process.env.REACT_APP_BACKEND_URL, options); if using env
+
 };
